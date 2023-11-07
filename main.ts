@@ -1,6 +1,16 @@
 pins.onPulsed(DigitalPin.P0, PulseValue.High, function () {
     Fentes += 1
 })
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
+    control.reset()
+})
 radio.onReceivedString(function (receivedString) {
     if (receivedString == "Go") {
         debute = 2
