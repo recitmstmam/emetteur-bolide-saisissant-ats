@@ -22,6 +22,7 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 let debute = 0
+// Modifier le nombre et écrire le numéro de votre poste de travail.
 radio.setGroup(1)
 pins.setPull(DigitalPin.P0, PinPullMode.PullDown)
 let Fentes = 0
